@@ -5592,7 +5592,8 @@ int knapsack(int W, vector<int>& wt, vector<int>& val, int n) {
 | Subsequence match | 2D DP table   | LCS, Edit Distance |
 
 ---
-
+---
+---
 
 ## Future topics: 
 
@@ -5606,4 +5607,5 @@ int knapsack(int W, vector<int>& wt, vector<int>& val, int n) {
 - Matrix
 - Kadane’s Algorithm
 
-
+---
+---
