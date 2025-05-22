@@ -5592,6 +5592,42 @@ int knapsack(int W, vector<int>& wt, vector<int>& val, int n) {
 | Subsequence match | 2D DP table   | LCS, Edit Distance |
 
 ---
+
+In C++, `#include <algorithm>` is a header file that provides a collection of useful **template functions** designed to work on ranges of elements, typically containers like arrays, vectors, and lists. These functions perform operations such as searching, sorting, counting, and modifying elements.
+
+### Key Functions in `<algorithm>`
+1. **Sorting**:
+   - `std::sort(begin, end)` – Sorts elements in ascending order (or using a custom comparator).
+   - `std::stable_sort(begin, end)` – Maintains the relative order of equal elements.
+   - `std::partial_sort(begin, middle, end)` – Sorts only the first part of a range.
+
+2. **Searching**:
+   - `std::find(begin, end, value)` – Finds the first occurrence of a value.
+   - `std::binary_search(begin, end, value)` – Checks if a value exists in a **sorted** range.
+   - `std::lower_bound(begin, end, value)` – Finds the first element **not less than** the given value.
+   - `std::upper_bound(begin, end, value)` – Finds the first element **greater than** the given value.
+
+3. **Modifying Operations**:
+   - `std::reverse(begin, end)` – Reverses the order of elements.
+   - `std::rotate(begin, middle, end)` – Rotates elements such that `middle` becomes the new first element.
+   - `std::fill(begin, end, value)` – Assigns a given value to all elements.
+
+4. **Min/Max Operations**:
+   - `std::min(a, b)` – Returns the smaller of two values.
+   - `std::max(a, b)` – Returns the larger of two values.
+   - `std::min_element(begin, end)` – Finds the smallest element in a range.
+   - `std::max_element(begin, end)` – Finds the largest element in a range.
+
+5. **Other Useful Functions**:
+   - `std::count(begin, end, value)` – Counts occurrences of a value.
+   - `std::unique(begin, end)` – Removes consecutive duplicates (requires sorting first for full deduplication).
+   - `std::next_permutation(begin, end)` – Generates the next lexicographical permutation.
+   - `std::shuffle(begin, end, random_generator)` – Randomly shuffles elements.
+
+
+
+
+---
 ---
 ---
 
