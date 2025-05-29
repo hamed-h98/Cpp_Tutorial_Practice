@@ -4295,6 +4295,37 @@ int main() {
 ---
 
 
+```c++
+class Shape{
+    public: 
+        double area = 0; 
+        double volume = 0; 
+};
+
+class Cube: public Shape{
+    public: 
+        double side; 
+        Cube(double side){
+            this->side = side; 
+            this->area = 6 * side * side;
+            this->volume = side * side * side;
+        }
+};
+
+// OR: 
+
+class Cube2: public Shape{
+    public: 
+        double side; 
+        Cube2(double side) : side(side) {
+            area = 6 * side * side;
+            volume = side * side * side;
+        }
+};
+```
+
+
+
 ---
 
 
