@@ -3808,11 +3808,11 @@ int main() {
     std::tuple<int, double, char> t = {1, 2.4, 'a'};
     std::tuple<int, double, std::string> p = {1, 2.3, "Hello"};
 
-    // linspace
+    // linspace (size of array is fixed and predetermined)
     std::vector<double> t_vec(100);
     for (int i = 0; i < 100; ++i) t_vec[i] = i / 99.0;
 
-    // arange
+    // arange (size of array is not fixed)
     std::vector<double> t;
     for(double i = 0; i<10; i += 0.1) t.push_back(i);
     for(double val : t){
